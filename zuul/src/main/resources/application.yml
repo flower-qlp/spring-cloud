@@ -1,0 +1,16 @@
+server:
+  port: 8769
+
+spring:
+  application:
+    name: server-zuul
+
+#路由网关
+zuul:
+  routes:
+    api-a:
+      path: /api-a/**
+      service-id: service-ribbon
+    api-b:
+      path: /api-b/**
+      service-id: server-feign

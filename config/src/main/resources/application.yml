@@ -1,0 +1,14 @@
+server:
+  port: 8700
+
+spring:
+  application:
+    name: config-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/78/springboot.git
+          username:
+          password:
+          default-label: 20191202
