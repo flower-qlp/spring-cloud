@@ -7,6 +7,7 @@ import org.springframework.web.client.RestTemplate;
 
 /**
  * @author happy
+ * 负载均衡
  */
 @Component
 public class RestTemplateConf {
